@@ -3,9 +3,7 @@ import os
 
 from django.core.management import BaseCommand
 from django.db import IntegrityError
-from reviews.models import (Category, Comment, Genre, GenreTitle, Review,
-                            Title,
-                            )
+from reviews.models import Category, Comment, Genre, GenreTitle, Review, Title
 from users.models import UserProfile
 
 from api_yamdb.settings import CSV_FILES_DIR
