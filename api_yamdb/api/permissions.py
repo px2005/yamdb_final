@@ -53,6 +53,7 @@ class ReadOnlyOrAuthorModeratorAdmin(BasePermission):
 
 class IsMeAndSuperUserAndAdmin(BasePermission):
     def has_permission(self, request, view):
+        result = ''
         try:
             username_me = view.kwargs.get('username') == 'me'
         except AttributeError:

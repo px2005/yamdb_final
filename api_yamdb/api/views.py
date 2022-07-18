@@ -6,12 +6,8 @@ from rest_framework.response import Response
 
 from .filters import TitleFilter
 from .mixins import CreateListDestroyMixin
-from .permissions import (
-    IsAdmin,
-    IsMeAndSuperUserAndAdmin,
-    ReadOnly,
-    ReadOnlyOrAuthorModeratorAdmin,
-)
+from .permissions import (IsAdmin, IsMeAndSuperUserAndAdmin,
+                          ReadOnly, ReadOnlyOrAuthorModeratorAdmin,)
 from .serializers import (CategorySerializer, CommentSerializer,
                           GenreSerializer, ReviewSerializer,
                           TitleCreateSerializer, TitleSerializer,
