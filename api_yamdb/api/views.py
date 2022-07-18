@@ -15,6 +15,7 @@ from .serializers import (CategorySerializer, CommentSerializer,
 from reviews.models import Category, Comment, Genre, Review, Title
 from users.models import UserProfile
 
+
 class CategoryViewSet(CreateListDestroyMixin):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
