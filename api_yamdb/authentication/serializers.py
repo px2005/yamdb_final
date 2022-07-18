@@ -1,13 +1,12 @@
 import os
 import struct
 
+from api.serializers import UserSerializer
+from api_yamdb.settings import EMAIL_SENDER, EMAIL_SUBJECT
 from django.core.mail import send_mail
 from django.shortcuts import get_object_or_404
 from rest_framework import serializers
 from rest_framework_simplejwt.serializers import TokenObtainSlidingSerializer
-
-from api.serializers import UserSerializer
-from api_yamdb.settings import EMAIL_SENDER, EMAIL_SUBJECT
 from users.models import UserProfile
 
 

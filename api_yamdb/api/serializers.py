@@ -1,12 +1,11 @@
+from core.utils import SerializerKwargValue
 from django.db.models import Avg
 from django.utils import timezone
 from rest_framework import serializers
 from rest_framework.validators import UniqueTogetherValidator
-
-from core.utils import SerializerKwargValue
+from reviews.models import Category, Comment, Genre, Review, Title
 from users.enums import Roles
 from users.models import UserProfile
-from reviews.models import Category, Comment, Genre, Review, Title
 
 
 class CategorySerializer(serializers.ModelSerializer):

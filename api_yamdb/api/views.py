@@ -1,6 +1,6 @@
 from django.db.models import Avg
-from django_filters.rest_framework import DjangoFilterBackend
 from django.shortcuts import get_object_or_404
+from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, status, viewsets
 from rest_framework.response import Response
 
@@ -12,15 +12,10 @@ from .permissions import (
     ReadOnly,
     ReadOnlyOrAuthorModeratorAdmin,
 )
-from .serializers import (
-    CategorySerializer,
-    GenreSerializer,
-    ReviewSerializer,
-    CommentSerializer,
-    TitleCreateSerializer,
-    TitleSerializer,
-    UserSerializer,
-)
+from .serializers import (CategorySerializer, CommentSerializer,
+                          GenreSerializer, ReviewSerializer,
+                          TitleCreateSerializer, TitleSerializer,
+                          UserSerializer,)
 from reviews.models import Category, Comment, Genre, Review, Title
 from users.models import UserProfile
 
