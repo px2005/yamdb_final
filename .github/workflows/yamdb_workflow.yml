@@ -1,6 +1,6 @@
-name: Django-app workflow
+name: YaMDB workflow
 
-on: [ push ]
+on: [push]
 
 jobs:
   tests:
