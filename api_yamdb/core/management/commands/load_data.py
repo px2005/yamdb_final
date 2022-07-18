@@ -1,12 +1,11 @@
 import csv
 import os
 
+from api_yamdb.settings import CSV_FILES_DIR
 from django.core.management import BaseCommand
 from django.db import IntegrityError
-
-from api_yamdb.settings import CSV_FILES_DIR
 from reviews.models import (Category, Comment, Genre, GenreTitle, Review,
-                            Title,)
+                            Title, )
 from users.models import UserProfile
 
 FILES_CLASSES = {
@@ -36,7 +35,6 @@ def open_csv_file(file_name):
             return list(csv.reader(file))
     except FileNotFoundError:
         print(f'Файл {csv_file} не найден.')
-        return
 
 
 def change_foreign_values(data_csv):

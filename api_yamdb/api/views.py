@@ -1,9 +1,6 @@
 from django.db.models import Avg
 from django.shortcuts import get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework import filters, status, viewsets
-from rest_framework.response import Response
-
 from .filters import TitleFilter
 from .mixins import CreateListDestroyMixin
 from .permissions import (IsAdmin, IsMeAndSuperUserAndAdmin,
@@ -12,6 +9,8 @@ from .serializers import (CategorySerializer, CommentSerializer,
                           GenreSerializer, ReviewSerializer,
                           TitleCreateSerializer, TitleSerializer,
                           UserSerializer,)
+from rest_framework import filters, status, viewsets
+from rest_framework.response import Response
 from reviews.models import Category, Comment, Genre, Review, Title
 from users.models import UserProfile
 
