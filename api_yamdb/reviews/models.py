@@ -1,8 +1,9 @@
-from api_yamdb import settings
 from core.models import BaseTextModel
 from core.validators import validate_date
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
+
+from api_yamdb import settings
 
 
 class Category(models.Model):
