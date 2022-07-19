@@ -72,3 +72,7 @@ docker-compose exec web python manage.py createsuperuser
 или
 
 docker-compose exec web python manage.py loaddata fixtures.json
+
+Ссылки проекта:
+
+http://62.84.122.171/api/v1/ http://62.84.122.171/admin/ http://62.84.122.171/redoc/
