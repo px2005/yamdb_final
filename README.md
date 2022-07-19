@@ -23,7 +23,7 @@ git clone https://github.com/px2005/yamdb_final.git
 cd api_yamdb
 ```
 
-Cоздать и активировать виртуальное окружение:
+Cоздать и активировать виртуальное окружение :
 
 ```
 python3 -m venv venv
