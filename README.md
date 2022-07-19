@@ -24,11 +24,6 @@ python3 -m pip install --upgrade pip
 Отредактируйте файл nginx/default.conf и в строке server_name впишите IP виртуальной машины (сервера).
 Скопируйте подготовленные файлы docker-compose.yaml и nginx/default.conf из вашего проекта на сервер:
 
-Зайдите в репозиторий на локальной машине и отправьте файлы на сервер. Можно сделать 2умя способами, первый склонировав репозиторий, переместив нужные файлы командой mv после чего удалить остаток
-
-rm -rf hw05_final
-Или:
-
 scp docker-compose.yaml <username>@<host>/home/<username>/docker-compose.yaml
 sudo mkdir nginx
 scp default.conf <username>@<host>/home/<username>/nginx/default.conf
