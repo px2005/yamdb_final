@@ -12,7 +12,10 @@ SECRET_KEY = 'p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs'
 DEBUG = False
 
 # ALLOWED_HOSTS = [ip for ip in os.getenv('HOSTS', default='*')]
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*',
+                 'web',
+                 '62.84.122.171',
+                 '127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
