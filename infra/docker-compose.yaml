@@ -9,8 +9,7 @@ services:
     env_file:
       - ./.env
   web:
-#    image: px2005/yamdb_final:latest
-    build: .
+    image: px2005/yamdb_final:latest
     restart: always
     volumes:
       - static_value:/app/static/
